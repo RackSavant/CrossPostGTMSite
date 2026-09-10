@@ -23,30 +23,34 @@ export function HeroCarousel() {
   }, []);
 
   return (
-    <section className="relative h-[600px] flex items-center overflow-hidden bg-white">
+    <section className="relative h-[700px] flex items-center overflow-hidden bg-gradient-to-br from-gray-50 to-white">
       
-      {/* Carousel Images - Behind Text, Smaller, Right Side */}
-      <div className="absolute right-12 top-1/2 -translate-y-1/2 w-[450px] h-[450px] opacity-20 blur-[2px]">
-        {images.map((image, index) => (
-          <img
+      {/* 3-Panel Image Grid - Right Side */}
+      <div className="absolute right-8 top-1/2 -translate-y-1/2 w-[600px] h-[500px] grid grid-cols-3 gap-4">
+        {images.slice(0, 3).map((image, index) => (
+          <div
             key={index}
-            src={image.src}
-            alt={image.alt}
-            className={`absolute inset-0 w-full h-full object-cover rounded-lg transition-all duration-1000 ${
-              index === currentIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+            className={`relative rounded-lg overflow-hidden shadow-xl transition-all duration-700 ${
+              index === currentIndex ? 'scale-105 z-10' : 'scale-100 opacity-70'
             }`}
-          />
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
         ))}
       </div>
       
-      {/* Text Content - Prominent */}
+      {/* Text Content - Left Side */}
       <div className="relative z-20 max-w-7xl mx-auto px-8 lg:px-16 py-12 w-full">
         <div className="max-w-2xl">
           <p className="text-sm uppercase tracking-wider mb-4 text-gray-600 font-semibold">Authenticated Resale</p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
-            Sign Up.<br />
-            Point & Click.<br />
-            <span className="text-yellow-400">Start Selling Now!</span>
+            <span className="text-yellow-400">RackSavant</span><br />
+            Sign Up. Point & Click.<br />
+            Start Selling Now!
           </h1>
           <p className="text-xl mb-10 text-gray-700 max-w-xl">
             Every piece enters inventory. Sell clothes faster!
