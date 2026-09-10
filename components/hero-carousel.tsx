@@ -23,42 +23,44 @@ export function HeroCarousel() {
   }, []);
 
   return (
-    <section className="relative h-[600px] flex items-center overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent z-10" />
+    <section className="relative h-[700px] flex items-center overflow-hidden bg-gray-100">
       
-      {/* Carousel Images */}
-      {images.map((image, index) => (
-        <img
-          key={index}
-          src={image.src}
-          alt={image.alt}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-            index === currentIndex ? 'opacity-100' : 'opacity-0'
-          }`}
-        />
-      ))}
+      {/* Carousel Images - Right Side */}
+      <div className="absolute right-0 top-0 bottom-0 w-3/5 overflow-hidden">
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image.src}
+            alt={image.alt}
+            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-1000 ${
+              index === currentIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
+        ))}
+      </div>
       
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-        <div className="max-w-xl">
-          <p className="text-sm uppercase tracking-wider mb-4">Authenticated Luxury Resale</p>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+      {/* Text Content - Left Side */}
+      <div className="relative z-20 w-2/5 px-8 lg:px-16 py-12">
+        <div className="max-w-lg">
+          <p className="text-sm uppercase tracking-wider mb-4 text-gray-700">Authenticated Resale</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
             Sign Up.<br />
             Point & Click.<br />
             <span className="text-yellow-400">Start Selling Now!</span>
           </h1>
-          <p className="text-lg mb-8 text-white/90">
+          <p className="text-lg mb-8 text-gray-700">
             Every piece enters inventory. Sell clothes faster!
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col gap-4">
             <Link
               href="/join"
-              className="bg-yellow-400 text-black px-12 py-5 text-xl rounded-none hover:bg-yellow-300 transition-colors font-bold text-center shadow-lg"
+              className="bg-yellow-400 text-black px-10 py-4 text-lg rounded-none hover:bg-yellow-300 transition-colors font-bold text-center shadow-lg"
             >
               Start Earning Today
             </Link>
             <Link
               href="/shop"
-              className="border-2 border-white text-white px-8 py-4 rounded-none hover:bg-white hover:text-black transition-colors inline-flex items-center justify-center gap-2 font-medium"
+              className="border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-none hover:bg-gray-900 hover:text-white transition-colors inline-flex items-center justify-center gap-2 font-medium"
             >
               Shop Now
               <ArrowRight className="w-4 h-4" />
@@ -68,13 +70,13 @@ export function HeroCarousel() {
       </div>
 
       {/* Carousel Indicators */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
+      <div className="absolute bottom-8 right-8 z-20 flex gap-2">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full transition-all ${
-              index === currentIndex ? 'bg-yellow-400 w-8' : 'bg-white/50'
+              index === currentIndex ? 'bg-yellow-400 w-8' : 'bg-gray-400'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
