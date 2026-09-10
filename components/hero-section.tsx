@@ -8,8 +8,8 @@ export function HeroSection() {
     <section className="relative h-[600px] flex items-center">
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-10" />
       <img
-        src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600&h=900&fit=crop"
-        alt="Fashion hero"
+        src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1600&h=900&fit=crop"
+        alt="Luxury fashion woman"
         className="absolute inset-0 w-full h-full object-cover"
       />
       
