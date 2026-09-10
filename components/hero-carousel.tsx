@@ -46,7 +46,7 @@ export function HeroCarousel() {
       </div>
       
       {/* Text Content - Left Side (45% width) */}
-      <div className="relative z-20 w-[45%] px-12 lg:px-16 py-12">
+      <div className="relative z-20 w-[45%] pl-16 lg:pl-24 pr-8 py-12">
         <div className="max-w-xl">
           <p className="text-sm uppercase tracking-wider mb-4 text-gray-600 font-semibold">Authenticated Resale</p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
