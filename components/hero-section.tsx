@@ -17,9 +17,9 @@ export function HeroSection() {
         <div className="max-w-2xl">
           <p className="text-sm uppercase tracking-wider mb-4">Authenticated Luxury Resale</p>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Snap a Photo.<br />
-            We List It Everywhere.<br />
-            <span className="text-yellow-400">Earn Money Now.</span>
+            Sign Up.<br />
+            Point & Click.<br />
+            <span className="text-yellow-400">Start Selling Now!</span>
           </h1>
           <p className="text-lg mb-8 text-white/90">
             Discover AI-powered virtual try-on with our SDK. Every piece enters inventory. Sell clothes faster!

@@ -20,11 +20,11 @@ export function ValuePropSection() {
           </div>
           <div className="relative">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/racksavant-7bac9.appspot.com/o/builds%2FWebsite%2FWebsitephoto.png?alt=media"
-              alt="Point and click interface demonstration"
+              src="/point-click-demo.jpg"
+              alt="Mobile app photographing Keith Haring t-shirt in thrift store"
               className="rounded-lg shadow-2xl w-full"
               onError={(e) => {
-                // Fallback to placeholder if Firebase image fails
+                // Fallback to placeholder if image not found
                 e.currentTarget.src = 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop';
               }}
             />
