@@ -20,7 +20,7 @@ export function ValuePropSection() {
           </div>
           <div className="relative">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/racksavant-7bac9.appspot.com/o/builds%2FWebsite%2Fpoint-click-demo.jpg?alt=media"
+              src="https://firebasestorage.googleapis.com/v0/b/racksavant-7bac9.appspot.com/o/builds%2FWebsite%2FWebsitephoto.png?alt=media"
               alt="Point and click interface demonstration"
               className="rounded-lg shadow-2xl w-full"
               onError={(e) => {
