@@ -12,7 +12,7 @@ export function ValuePropSection() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               Point & Click Simplicity
             </h2>
-            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
               Auto-inventorize your closet or others' closets and sell on our platform.<br />
               <span className="text-white font-semibold">We do the rest. Watch money grow in your account.</span>
             </p>
@@ -36,7 +36,7 @@ export function ValuePropSection() {
               <Camera className="w-10 h-10" />
             </div>
             <h3 className="text-2xl font-bold mb-3">1. Snap Photos</h3>
-            <p className="text-gray-300">
+            <p className="text-gray-200">
               Use our mobile app to photograph items in seconds. AI handles authentication and pricing.
             </p>
           </div>
@@ -46,7 +46,7 @@ export function ValuePropSection() {
               <Zap className="w-10 h-10" />
             </div>
             <h3 className="text-2xl font-bold mb-3">2. Auto-List</h3>
-            <p className="text-gray-300">
+            <p className="text-gray-200">
               Items automatically appear across our network of stores. No manual work required.
             </p>
           </div>
@@ -56,7 +56,7 @@ export function ValuePropSection() {
               <TrendingUp className="w-10 h-10" />
             </div>
             <h3 className="text-2xl font-bold mb-3">3. Get Paid</h3>
-            <p className="text-gray-300">
+            <p className="text-gray-200">
               Money hits your account automatically when items sell. Track earnings in real-time.
             </p>
           </div>
@@ -69,7 +69,7 @@ export function ValuePropSection() {
           >
             Start Earning Today
           </Link>
-          <p className="text-sm text-gray-400 mt-4">Free to join • No upfront costs • Earn 5-75% per sale</p>
+          <p className="text-sm text-gray-300 mt-4">Free to join • No upfront costs • Earn 5-75% per sale</p>
         </div>
       </div>
     </section>

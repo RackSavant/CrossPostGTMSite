@@ -30,8 +30,8 @@ export function FeaturesSection() {
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-light mb-4">Why RackSavant</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-gray-900">Why RackSavant</h2>
+          <p className="text-gray-700 max-w-2xl mx-auto text-lg">
             We're reimagining luxury resale with technology that benefits buyers, sellers, and contributors
           </p>
         </div>
@@ -42,8 +42,8 @@ export function FeaturesSection() {
               <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4">
                 <feature.icon className="w-8 h-8" />
               </div>
-              <h3 className="font-medium mb-2">{feature.title}</h3>
-              <p className="text-sm text-gray-600">{feature.description}</p>
+              <h3 className="font-semibold mb-2 text-gray-900">{feature.title}</h3>
+              <p className="text-sm text-gray-700">{feature.description}</p>
             </div>
           ))}
         </div>
