@@ -42,6 +42,7 @@ export function Footer() {
               <li><Link href="/authentication" className="hover:text-white">Authentication</Link></li>
               <li><Link href="/sustainability" className="hover:text-white">Sustainability</Link></li>
               <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+              <li><Link href="https://platform.racksavant.com" className="hover:text-white text-yellow-400">For Businesses →</Link></li>
             </ul>
           </div>
         </div>
