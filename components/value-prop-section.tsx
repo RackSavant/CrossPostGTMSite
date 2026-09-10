@@ -7,15 +7,28 @@ export function ValuePropSection() {
   return (
     <section className="py-20 bg-gradient-to-br from-black to-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Start Selling Now with<br />
-            Point & Click Simplicity
-          </h2>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Auto-inventorize your closet or others' closets and sell on our platform.<br />
-            <span className="text-white font-semibold">We do the rest. Watch money grow in your account.</span>
-          </p>
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+          <div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Start Selling Now with<br />
+              Point & Click Simplicity
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
+              Auto-inventorize your closet or others' closets and sell on our platform.<br />
+              <span className="text-white font-semibold">We do the rest. Watch money grow in your account.</span>
+            </p>
+          </div>
+          <div className="relative">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/racksavant-7bac9.appspot.com/o/builds%2FWebsite%2Fpoint-click-demo.jpg?alt=media"
+              alt="Point and click interface demonstration"
+              className="rounded-lg shadow-2xl w-full"
+              onError={(e) => {
+                // Fallback to placeholder if Firebase image fails
+                e.currentTarget.src = 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop';
+              }}
+            />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
