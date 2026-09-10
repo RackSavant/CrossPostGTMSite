@@ -10,7 +10,6 @@ export function ValuePropSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
           <div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Start Selling Now with<br />
               Point & Click Simplicity
             </h2>
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
