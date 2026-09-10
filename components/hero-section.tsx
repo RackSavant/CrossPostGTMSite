@@ -22,7 +22,7 @@ export function HeroSection() {
             <span className="text-yellow-400">Start Selling Now!</span>
           </h1>
           <p className="text-lg mb-8 text-white/90">
-            Discover AI-powered virtual try-on with our SDK. Every piece enters inventory. Sell clothes faster!
+            Every piece enters inventory. Sell clothes faster!
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
