@@ -25,27 +25,29 @@ export function HeroCarousel() {
   return (
     <section className="relative h-[700px] flex items-center overflow-hidden bg-gradient-to-br from-gray-50 to-white">
       
-      {/* 3-Panel Image Grid - Right Side */}
-      <div className="absolute right-8 top-1/2 -translate-y-1/2 w-[600px] h-[500px] grid grid-cols-3 gap-4">
-        {images.slice(0, 3).map((image, index) => (
-          <div
-            key={index}
-            className={`relative rounded-lg overflow-hidden shadow-xl transition-all duration-700 ${
-              index === currentIndex ? 'scale-105 z-10' : 'scale-100 opacity-70'
-            }`}
-          >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-full h-full object-cover"
-            />
-          </div>
-        ))}
+      {/* 3-Panel Image Grid - Right Side (Wider) */}
+      <div className="absolute right-0 top-0 bottom-0 w-[55%] flex items-center justify-center px-8">
+        <div className="grid grid-cols-3 gap-6 w-full h-[600px]">
+          {images.slice(0, 3).map((image, index) => (
+            <div
+              key={index}
+              className={`relative rounded-lg overflow-hidden shadow-2xl transition-all duration-700 ${
+                index === currentIndex ? 'scale-105 z-10' : 'scale-100 opacity-80'
+              }`}
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          ))}
+        </div>
       </div>
       
-      {/* Text Content - Left Side */}
-      <div className="relative z-20 max-w-7xl mx-auto px-8 lg:px-16 py-12 w-full">
-        <div className="max-w-2xl">
+      {/* Text Content - Left Side (45% width) */}
+      <div className="relative z-20 w-[45%] px-12 lg:px-16 py-12">
+        <div className="max-w-xl">
           <p className="text-sm uppercase tracking-wider mb-4 text-gray-600 font-semibold">Authenticated Resale</p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
             <span className="text-yellow-400">RackSavant</span><br />
