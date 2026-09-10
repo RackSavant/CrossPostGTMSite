@@ -1,7 +1,7 @@
 'use client';
 
 import { Header } from '@/components/header';
-import { HeroSection } from '@/components/hero-section';
+import { HeroCarousel } from '@/components/hero-carousel';
 import { ValuePropSection } from '@/components/value-prop-section';
 import { FeaturedProducts } from '@/components/featured-products';
 import { FeaturesSection } from '@/components/features-section';
@@ -16,7 +16,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
-        <HeroSection />
+        <HeroCarousel />
         <ValuePropSection />
         <FeaturedProducts />
         <FeaturesSection />
