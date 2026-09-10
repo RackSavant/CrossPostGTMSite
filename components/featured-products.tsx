@@ -56,10 +56,10 @@ export function FeaturedProducts() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h2 className="text-3xl font-light mb-2">Featured Collection</h2>
-            <p className="text-gray-600">Authenticated luxury, curated for you</p>
+            <h2 className="text-3xl font-bold mb-2 text-gray-900">Featured Collection</h2>
+            <p className="text-gray-700 text-base">Authenticated luxury, curated for you</p>
           </div>
-          <a href="/shop" className="text-sm underline hover:text-gray-600">View All</a>
+          <a href="/shop" className="text-sm font-medium underline text-gray-900 hover:text-gray-600">View All</a>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -99,18 +99,18 @@ export function FeaturedProducts() {
               </div>
 
               <div className="space-y-1">
-                <p className="text-xs text-gray-500 uppercase tracking-wide">{product.brand}</p>
-                <h3 className="font-medium text-sm group-hover:underline">{product.name}</h3>
-                <p className="text-xs text-gray-600">Condition: {product.condition}</p>
+                <p className="text-xs text-gray-600 uppercase tracking-wide font-medium">{product.brand}</p>
+                <h3 className="font-semibold text-sm text-gray-900 group-hover:underline">{product.name}</h3>
+                <p className="text-xs text-gray-700">Condition: {product.condition}</p>
                 <div className="flex items-center gap-2">
-                  <span className="font-semibold">${product.price.toLocaleString()}</span>
+                  <span className="font-bold text-gray-900">${product.price.toLocaleString()}</span>
                   {product.originalPrice && (
                     <span className="text-sm text-gray-400 line-through">
                       ${product.originalPrice.toLocaleString()}
                     </span>
                   )}
                 </div>
-                <p className="text-xs text-gray-500">by {product.contributor}</p>
+                <p className="text-xs text-gray-600">by {product.contributor}</p>
               </div>
             </div>
           ))}
