@@ -51,7 +51,8 @@ export function HeroCarousel() {
           <p className="text-sm uppercase tracking-wider mb-4 text-gray-600 font-semibold">Authenticated Resale</p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
             <span className="text-yellow-400">RackSavant</span><br />
-            Sign Up. Point & Click.<br />
+            Sign Up.<br />
+            Point & Click.<br />
             Start Selling Now!
           </h1>
           <p className="text-xl mb-10 text-gray-700 max-w-xl">
@@ -75,19 +76,6 @@ export function HeroCarousel() {
         </div>
       </div>
 
-      {/* Carousel Indicators - Subtle */}
-      <div className="absolute bottom-8 left-8 z-20 flex gap-2">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-1.5 h-1.5 rounded-full transition-all ${
-              index === currentIndex ? 'bg-yellow-400 w-6' : 'bg-gray-300'
-            }`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
-      </div>
     </section>
   );
 }
